@@ -30,6 +30,8 @@ public class Main {
         curso2.adicionarUmAluno(aluno4);
         curso2.adicionarUmAluno(aluno5);
 
+        System.out.println(curso2.adicionarUmAluno(aluno3));
+
 
     }
 }

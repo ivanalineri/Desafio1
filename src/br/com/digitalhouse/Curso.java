@@ -62,11 +62,25 @@ public class Curso {
         this.alunosMatriculados = alunosMatriculados;
     }
 
-    public Boolean adicionarUmAluno(Aluno umAluno){
-        return true;
+    public Boolean adicionarUmAluno(Aluno umAluno) {
+        if (this.getAlunosMatriculados().size() < quantidadeMaximaDeAlunos) {
+            alunosMatriculados.add(umAluno);
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
-    public void excluirAluno(Aluno umAluno){
+    public void excluirAluno(Aluno umAluno) {
+
+        for (int i = 0; i < alunosMatriculados.size(); i++) {
+            if (alunosMatriculados.contains(umAluno)) {
+                alunosMatriculados.remove(umAluno);
+
+            }
+        }
+
 
     }
 

@@ -16,4 +16,5 @@ public class ProfessorTitular extends Professores {
         super(nome, sobrenome, umTempoDeCasa, codDePorfessor);
         this.especialidade = especialidade;
     }
+
 }
